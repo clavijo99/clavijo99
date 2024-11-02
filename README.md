@@ -50,7 +50,7 @@ Desarrollador con más de 2 años de experiencia especializado en desarrollo mó
 - [Link al repositorio]
 
 ## 📊 GitHub Stats
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=TU_USERNAME&show_icons=true&theme=radical)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=clavijo99&show_icons=true&theme=radical)
 
 ## 🔧 Tecnologías & Herramientas
 ![](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
