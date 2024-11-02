@@ -64,4 +64,4 @@ Desarrollador con más de 2 años de experiencia especializado en desarrollo mó
 - Email: [bclavijogomez@gmail.com]
 
 ---
-⭐️ From [tu-usuario](https://github.com/clavijo99)
+⭐️ From [clavijo99](https://github.com/clavijo99)
