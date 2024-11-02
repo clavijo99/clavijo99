@@ -1,3 +1,5 @@
+![Banner para Linkedin Licenciada Marketing Minimalista Beige](https://github.com/user-attachments/assets/4661abf2-6c2c-44d9-a65c-61e133494a95)
+
 # 👨‍💻 Brayan Camilo Clavijo Gomez
 ### Desarrollador Mobile & Backend | Flutter & Django
 
@@ -35,7 +37,6 @@ Desarrollador con más de 2 años de experiencia especializado en desarrollo mó
   - Sistema de reportes en tiempo real
   - Interfaz intuitiva para reportes rápidos
 - Tecnologías: Flutter, Maps Integration, Offline Storage, Real-time Updates
-- [Link al repositorio o tienda]
 
 ### [AFI Asesorías Plus - Gestión de Calidad en Salud]
 🖥️ Plataforma integral desarrollada con Django y Flutter
@@ -47,10 +48,6 @@ Desarrollador con más de 2 años de experiencia especializado en desarrollo mó
   - Planes de mejoramiento empresarial
   - Dashboard de análisis y reportes
 - Tecnologías: Django REST Framework, PostgreSQL, Flutter, Push Notifications
-- [Link al repositorio]
-
-## 📊 GitHub Stats
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=clavijo99&show_icons=true&theme=radical)
 
 ## 🔧 Tecnologías & Herramientas
 ![](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
@@ -60,8 +57,8 @@ Desarrollador con más de 2 años de experiencia especializado en desarrollo mó
 ![](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
 
 ## 📫 Contacto
-- LinkedIn: [Brayan Camilo Clavijo Gomez]
-- Email: [bclavijogomez@gmail.com]
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brayan-camilo-clavijo-gomez-07538a152/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bclavijogomez@gmail.com)
 
 ---
-⭐️ From [clavijo99](https://github.com/clavijo99)
+⭐️ From [BrayanClavijo](https://github.com/BrayanClavijo)
