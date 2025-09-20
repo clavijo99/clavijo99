@@ -63,5 +63,3 @@ Desarrollador con más de 2 años de experiencia especializado en desarrollo mó
 
 ---
 ⭐️ From [BrayanClavijo](https://github.com/BrayanClavijo)
-
-hola que tal
