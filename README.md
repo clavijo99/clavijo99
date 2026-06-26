@@ -13,24 +13,36 @@
 
 ---
 
-## 🧑‍💻 Sobre mí
+## whoami
 
-Soy desarrollador mobile y backend con más de 2 años construyendo aplicaciones reales en producción. Me especializo en **Flutter** para mobile y **Django** para backend, con foco en código limpio, arquitecturas escalables y experiencias de usuario que realmente funcionen.
-
-Me interesa resolver problemas de negocio concretos: sincronización offline, notificaciones en tiempo real, autenticación robusta, dashboards con datos reales. No solo hacer que algo "funcione para el demo".
+```bash
+$ cat dev.profile
+```
 
 ```
-Lo que me mueve:
-  → Código mantenible sobre código inteligente
-  → Soluciones que impactan a usuarios reales
-  → Arquitecturas que escalan sin romper
+nombre     : Brayan Camilo Clavijo Gómez
+rol        : Mobile & Backend Developer
+exp        : +2 años en producción
+stack      : Flutter · Django · PostgreSQL · AWS
+base       : Villavicencio, Colombia 🇨🇴
+docencia   : Arquitectura de Software con Microservicios @ universidad
+enfoque    : código que escala, no solo que funciona en el demo
+```
+
+Construyo aplicaciones reales — sincronización offline, notificaciones en tiempo real, autenticación robusta, dashboards con datos reales. No prototipos de presentación.
+
+```
+filosofía:
+  → código mantenible > código inteligente
+  → arquitecturas que escalan sin romper
+  → documentación como parte del código, no como extra
 ```
 
 ---
 
-## 🛠️ Stack Tecnológico
+## stack
 
-### 📱 Mobile Development
+### mobile
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
@@ -39,144 +51,127 @@ Lo que me mueve:
 ![GetX](https://img.shields.io/badge/GetX-8B0000?style=flat-square&logoColor=white)
 ![Google Maps](https://img.shields.io/badge/Google_Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white)
 
-### 🔧 Backend Development
+### backend
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![DRF](https://img.shields.io/badge/Django_REST_Framework-ff1709?style=flat-square&logo=django&logoColor=white)
+![DRF](https://img.shields.io/badge/DRF-ff1709?style=flat-square&logo=django&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 ![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
 
-### ☁️ Cloud & DevOps
+### infra & devops
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 
-### 🧰 Herramientas
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=androidstudio&logoColor=white)
-
 ---
 
-## 🚀 Proyectos Destacados
-
-### 📱 Chilasi — Sistema de Reporte de Emergencias
-
-> App móvil para el reporte y gestión de emergencias en tiempo real, diseñada para funcionar incluso en zonas sin conexión a internet.
-
-**Características principales:**
-- Integración con mapas para localización y visualización de emergencias
-- Funcionamiento **offline** completo con sincronización automática al recuperar señal
-- Sistema de reportes en tiempo real con actualizaciones en vivo
-- Interfaz pensada para velocidad: reportes en menos de 3 taps
-- Push notifications para coordinadores y equipos de respuesta
-
-**Stack:** `Flutter` `Dart` `Firebase` `Google Maps` `SQLite` `Provider`
+## arquitectura que manejo
 
 ```
-Impacto: Reducción de tiempo de respuesta en situaciones de emergencia
+Mobile (Flutter)                    Backend (Django)
+────────────────────────            ──────────────────────────
+Clean Architecture          ←→      REST API + DRF
+BLoC / GetX / Provider              JWT + refresh token rotation
+Offline-first (SQLite)              PostgreSQL + migrations
+Push Notifications                  Celery (tareas async + beat)
+Google Maps SDK                     AWS S3 + EC2
+Firebase Auth / Storage             Nginx + Gunicorn
+
+CI/CD                               Observabilidad
+────────────────────────            ──────────────────────────
+GitHub Actions                      Logs estructurados
+Docker multi-stage builds           Health checks por servicio
+Deploy automatizado en push         Variables de entorno por env
 ```
 
 ---
 
-### 🏥 AFI Asesorías Plus — Gestión de Calidad en Salud
+## proyectos en producción
 
-> Plataforma integral para el sector salud y farmacéutico. Sistema completo de gestión de calidad con módulos de seguimiento regulatorio, riesgo farmacéutico y planes de mejoramiento.
+### Chilasi — reporte de emergencias en tiempo real
 
-**Características principales:**
-- Notificaciones automáticas de actualizaciones y cambios INVIMA
-- Gestión de sistemas de calidad y riesgo farmacéutico
-- Seguimiento de permisos sanitarios y registros con alertas de vencimiento
-- Módulo de planes de mejoramiento empresarial con seguimiento de indicadores
-- Dashboard de análisis con reportes exportables
-- App móvil companion en Flutter para acceso en campo
-
-**Stack:** `Django` `Django REST Framework` `PostgreSQL` `Flutter` `Celery` `AWS` `Push Notifications`
+App móvil para reporte y gestión de emergencias. Diseñada para funcionar en zonas sin conexión.
 
 ```
-Impacto: Automatización de procesos de calidad en instituciones de salud
+problema   : coordinación lenta en emergencias por dependencia de señal
+solución   : app offline-first con sincronización automática al reconectar
+resultado  : reportes en < 3 taps · actualizaciones en vivo para coordinadores
 ```
+
+**decisiones técnicas relevantes:**
+- SQLite local con cola de sincronización priorizada por criticidad
+- WebSocket para actualizaciones en tiempo real cuando hay señal
+- Google Maps con tiles cacheados para zonas sin internet
+- Push notifications segmentadas por rol (coordinador / campo)
+
+`Flutter` `Dart` `Firebase` `Google Maps` `SQLite` `Provider` `WebSocket`
 
 ---
 
-## 📊 GitHub Stats
+### AFI Asesorías Plus — gestión de calidad en salud
+
+Plataforma para el sector salud y farmacéutico. Automatiza seguimiento regulatorio, riesgo farmacéutico y planes de mejoramiento.
+
+```
+problema   : seguimiento manual de registros INVIMA y permisos sanitarios
+solución   : sistema automatizado con alertas, dashboards y app companion
+resultado  : reducción de tareas manuales en gestión de calidad institucional
+```
+
+**decisiones técnicas relevantes:**
+- Celery Beat para alertas programadas de vencimientos regulatorios
+- DRF con permisos por módulo (calidad / riesgo / mejoramiento)
+- Dashboard con reportes exportables en PDF y Excel
+- App Flutter companion para acceso en campo sin abrir el navegador
+- AWS S3 para almacenamiento de documentos regulatorios
+
+`Django` `DRF` `PostgreSQL` `Flutter` `Celery` `AWS` `Push Notifications`
+
+---
+
+## stats
 
 <div align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=BrayanClavijo&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117" />
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrayanClavijo&layout=compact&theme=github_dark&hide_border=true&langs_count=7&bg_color=0d1117" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=BrayanClavijo&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=3fb950&text_color=c9d1d9" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrayanClavijo&layout=compact&theme=github_dark&hide_border=true&langs_count=8&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" />
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=BrayanClavijo&theme=github-dark-blue&hide_border=true&background=0d1117" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=BrayanClavijo&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=3fb950&currStreakLabel=58a6ff" />
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=BrayanClavijo&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=3fb950&point=ffffff" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=BrayanClavijo&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=3fb950&point=ffffff&area=true&area_color=3fb95020" />
 
 </div>
 
 ---
 
-## 🏗️ Arquitectura que manejo
+## aprendiendo ahora
 
-```
-Mobile (Flutter)              Backend (Django)
-──────────────────            ──────────────────────
-Clean Architecture      ←→    REST API + DRF
-BLoC / GetX / Provider        JWT Authentication
-Offline-first (SQLite)        PostgreSQL + Migrations
-Push Notifications            Celery (tareas async)
-Google Maps SDK               AWS S3 + EC2
-Firebase Auth/Storage         Nginx + Gunicorn
+```bash
+$ git log --oneline --learning
 ```
 
----
-
-## 📚 Lo que estoy aprendiendo
-
-- **FastAPI** — para microservicios más rápidos
-- **Riverpod** — nueva alternativa a Provider en Flutter
-- **GraphQL** — como alternativa a REST en proyectos complejos
-- **Kubernetes** — orquestación de contenedores a escala
+```
+[en curso]  FastAPI       → microservicios más rápidos que DRF para endpoints de alta carga
+[en curso]  Riverpod      → reemplazo de Provider con mejor manejo de estado reactivo
+[explorando] Kafka        → event streaming para arquitecturas desacopladas
+[explorando] Kubernetes   → orquestación cuando Docker Compose no escala
+```
 
 ---
 
-## 💡 Experiencia por áreas
+## contacto
 
-| Área | Tecnologías | Nivel |
-|------|------------|-------|
-| Mobile | Flutter, Dart, Firebase | ⬛⬛⬛⬛⬜ |
-| Backend | Django, Python, DRF | ⬛⬛⬛⬛⬜ |
-| Base de datos | PostgreSQL, SQLite | ⬛⬛⬛⬜⬜ |
-| Cloud | AWS, Firebase | ⬛⬛⬜⬜⬜ |
-| DevOps | Docker, GitHub Actions | ⬛⬛⬜⬜⬜ |
-| UI/UX | Figma, Flutter Widgets | ⬛⬛⬛⬜⬜ |
-
----
-
-## 🌱 Un poco más sobre mí
-
-- 🇨🇴 Con base en Colombia
-- 🎯 Enfocado en construir productos que solucionen problemas reales
-- 🤝 Abierto a colaborar en proyectos open source
-- 📖 Creo que la documentación es parte del código, no un extra
-- ☕ Funciono mejor con buena música y café negro
-
----
-
-## 📫 ¿Hablamos?
-
-Si tienes un proyecto en mente, necesitas un dev para tu equipo, o simplemente quieres hacer networking — escríbeme:
+Si tienes un proyecto en mente, buscas dev para tu equipo o quieres hablar de arquitectura:
 
 <div align="center">
 
@@ -186,12 +181,8 @@ Si tienes un proyecto en mente, necesitas un dev para tu equipo, o simplemente q
 
 </div>
 
----
-
 <div align="center">
 
-*Disponible para proyectos freelance · Remoto · Colombia 🇨🇴*
-
-⭐ De [BrayanClavijo](https://github.com/BrayanClavijo)
+*disponible para proyectos freelance · remoto · Colombia*
 
 </div>
