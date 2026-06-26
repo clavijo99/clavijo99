@@ -131,6 +131,14 @@ resultado  : reducción de tareas manuales en gestión de calidad institucional
 
 ---
 
+## repos con estrella
+
+<!-- STARRED_START -->
+_sin repositorios marcados con estrella aún._
+<!-- STARRED_END -->
+
+---
+
 ## stats
 
 <div align="center">

@@ -1,0 +1,36 @@
+name: Update starred repos in README
+
+on:
+  # se dispara cuando das o quitas una estrella en cualquier repo
+  watch:
+    types: [started]
+
+  # también cada día a medianoche (por si acaso)
+  schedule:
+    - cron: "0 0 * * *"
+
+  # disparo manual desde la pestaña Actions
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run update script
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python scripts/update_starred.py
+
+      - name: Commit y push si hubo cambios
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: sync starred repos [skip ci]"
+          git push
