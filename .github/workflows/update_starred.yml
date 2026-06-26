@@ -1,11 +1,7 @@
 name: Update starred repos in README
 
 on:
-  # se dispara cuando das o quitas una estrella en cualquier repo
-  watch:
-    types: [started]
-
-  # también cada día a medianoche (por si acaso)
+  # cada día a medianoche UTC
   schedule:
     - cron: "0 0 * * *"
 
@@ -24,7 +20,7 @@ jobs:
 
       - name: Run update script
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
         run: python scripts/update_starred.py
 
       - name: Commit y push si hubo cambios

@@ -3,7 +3,7 @@ import re
 import urllib.request
 import json
 
-USERNAME = "BrayanClavijo"
+USERNAME = "clavijo99"
 README_PATH = "README.md"
 
 SECTION_START = "<!-- STARRED_START -->"
