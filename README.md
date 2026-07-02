@@ -140,7 +140,7 @@ resultado  : reducción de tareas manuales en gestión de calidad institucional
 | [POO-ParcialF-project](https://github.com/YefrxxJPG/POO-ParcialF-project) |  | ![Java](https://img.shields.io/badge/-Java-B07219?style=flat-square&logoColor=white) | ⭐ 1 |
 | [Project](https://github.com/yesicablum/Project) |  | ![JavaScript](https://img.shields.io/badge/-JavaScript-F1E05A?style=flat-square&logoColor=white) | ⭐ 2 |
 | [sample_application_flutter](https://github.com/JeanmartinPV/sample_application_flutter) |  | ![Dart](https://img.shields.io/badge/-Dart-00B4AB?style=flat-square&logoColor=white) | ⭐ 78 · 🍴 26 |
-| [flutter-samples](https://github.com/diegoveloper/flutter-samples) | Flutter Samples | ![Dart](https://img.shields.io/badge/-Dart-00B4AB?style=flat-square&logoColor=white) | ⭐ 3211 · 🍴 739 |
+| [flutter-samples](https://github.com/diegoveloper/flutter-samples) | Flutter Samples | ![Dart](https://img.shields.io/badge/-Dart-00B4AB?style=flat-square&logoColor=white) | ⭐ 3211 · 🍴 738 |
 | [flutter_side_menu_animation](https://github.com/diegoveloper/flutter_side_menu_animation) |  | ![Dart](https://img.shields.io/badge/-Dart-00B4AB?style=flat-square&logoColor=white) | ⭐ 56 · 🍴 15 |
 | [portfolio](https://github.com/diegobrice/portfolio) |  | ![HTML](https://img.shields.io/badge/-HTML-E34C26?style=flat-square&logoColor=white) | ⭐ 6 |
 | [emmanuel-mendez-react](https://github.com/emmanuel-mendez/emmanuel-mendez-react) | Emmanuel Méndez portfolio | ![SCSS](https://img.shields.io/badge/-SCSS-888888?style=flat-square&logoColor=white) | ⭐ 2 |
